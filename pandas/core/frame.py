@@ -6427,7 +6427,17 @@ class DataFrame(NDFrame, OpsMixin):
         inplace: bool = False,
         ignore_index: bool = False,
     ) -> DataFrame | None:
-        """
+        """dropna(
+            self,
+            *,
+            axis: Axis = 0,
+            how: AnyAll = 'any',
+            thresh: int = None,
+            subset: IndexLabel | None = None,
+            inplace: bool = False,
+            ignore_index: bool = False
+        )
+
         Remove missing values.
 
         See the :ref:`User Guide <missing_data>` for more on which values are
